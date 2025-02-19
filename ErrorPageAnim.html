@@ -10,119 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-    <style>
-        body {
-            background-color: rgb(225, 239, 239);
-            text-align: center;
-            padding-top: 150px;
-        }
-
-        .test {
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content: space-between;
-        }
-
-        .one {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 45px;
-            font-family: 'Courier New', Courier, monospace;
-            white-space: nowrap;
-            color: rgb(8, 242, 176);
-            animation-name: shade;
-            animation-duration: 4s;
-            animation-iteration-count: infinite;
-        }
-
-        @keyframes shade {
-            0% {
-                color: rgb(3, 251, 189);
-            }
-
-            25% {
-                color: rgb(227, 62, 172);
-            }
-
-            50% {
-                color: blue;
-            }
-
-            100% {
-                color: rgb(103, 232, 103);
-            }
-        }
-
-        .end {
-            display: flex;
-            justify-content: center;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            font-size: 24px;
-            color: rgb(59, 58, 58);
-            text-align: center;
-        }
-
-        h1 {
-            height: 100px;
-        }
-
-        h1 span {
-            position: relative;
-            top: 20px;
-            display: inline-block;
-            animation: bounce .3s ease infinite alternate;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: 80px;
-            color: #d42c2c;
-        }
-
-        h1 span:nth-child(2) {
-            animation-delay: .1s;
-        }
-
-        h1 span:nth-child(3) {
-            animation-delay: .2s;
-        }
-
-        h1 span:nth-child(4) {
-            animation-delay: .3s;
-        }
-
-        h1 span:nth-child(5) {
-            animation-delay: .4s;
-        }
-
-        @keyframes bounce {
-            100% {
-                top: -20px;
-                text-shadow:
-                    0 1px 0 #CCC,
-                    0 2px 0 #f40707,
-                    0 3px 0 #0c0c0c,
-                    0 4px 0 #e91212,
-                    0 5px 0 #000000,
-                    0 50px 25px rgba(215, 43, 43, 0.2);
-            }
-        }
-
-        .error-message {
-            font-size: 100px;
-            text-shadow: 2px 2px 5px rgb(238, 53, 53);
-            white-space: nowrap;
-        }
-
-        .error-description {
-            font-size: 24px;
-            color: rgb(59, 58, 58);
-            margin-top: 10px;
-        }
-
-        .btn-container {
-            margin-top: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -147,7 +35,7 @@
     </div>
 
     <div class="container end error-description">
-        <div>Server is temporarily unable to handle requests  currently.<br>Please, Try again after sometimes. </div>
+        <div>Server is temporarily unable to handle requests currently.<br>Please, Try again after sometimes. </div>
     </div>
 
     <div class="container btn-container">
